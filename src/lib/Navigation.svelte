@@ -1,14 +1,18 @@
+<script>
+    import {base} from '$app/paths';
+</script>
+
 <nav class="section-nav" aria-label="Section navigation">
     <a href="#about" aria-label="Go to About Me">  
-        <img src="/images/icons/profile.svg" alt="" />  
+        <img src="{base}/images/icons/profile.svg" alt="" />  
     </a>
 
     <a href="#tech" aria-label="Go to Technologies / Software">  
-        <img src="/images/icons/tech.svg" alt="" />  
+        <img src="{base}/images/icons/tech.svg" alt="" />  
     </a>
 
     <a href="#projects" aria-label="Go to Projects"> 
-        <img src="/images/icons/projects.svg" alt="" />   
+        <img src="{base}/images/icons/projects.svg" alt="" />   
     </a>
 
 </nav>
