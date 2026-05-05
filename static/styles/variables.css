@@ -1,48 +1,72 @@
-/* ==============================
-   CSS Design Tokens
-   Theme: Mindful Living Starter Kit (Light)
-   Aesthetic: Earth tones, elegance, clarity
-============================== */
 
 :root {
-    /* ========== Colour Palette ========== */
+    /* Colour */
 
+    --color-background: #fffdf2;
+    --color-surface:#ffffff;
 
-    /* Accent & Feedback Colours */
+    --color-primary: #f9e983;
+    --color-primary-dark: #a89b86;
 
-    /* Neutral Greys for Text and UI */
- 
-    /* Backgrounds & Surfaces */
+    --color-text-primary: #2b2b2b;
+    --color-text-muted: #6d6a5f;
 
-    /* Interactive States */
+    --color-border: #d8cfaa;
+    --color-focus: #2b2b2b;
 
-    /* Disabled State Styling */
+    --color-success: #2e7d32;
+    --color-error: #c62828;
 
-    /* Gradient (for headers, accents, or transitions) */
+    --color-glow-primary: rgba(249, 233, 131, 0.9);
+    
 
-    /* ========== Typography ========== */
+    /* Typography */
    
+    --font-heading: "Fredoka", sans-serif;
+    --font-body: "Sour Gummy", sans-serif;
 
-    /* Font Sizes */
     --font-xs: 0.75rem;
     --font-sm: 0.875rem;
     --font-base: 1rem;
     --font-lg: 1.25rem;
     --font-xl: 1.5rem;
     --font-xxl: 2rem;
+    --font-display: 3rem;
 
-    /* ========== Radius, Spacing & Motion ========== */
-    --radius-sm: 4px;
-    --radius-md: 8px;
-    --radius-lg: 16px;
+    /* Spacing */
 
     --space-xs: 0.25rem;
     --space-sm: 0.5rem;
     --space-md: 1rem;
     --space-lg: 2rem;
     --space-xl: 4rem;
+    --space-section: 8rem;
 
+    /* Radius */
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+    --radius-pill: 999px;
+
+    /* Layout */
+
+    --header-height-desktop: 240px;
+    --header-height-mobile: 160px;
+
+    --nav-width-desktop: 320px;
+    --nav-width-mobile: 240px;
+    --nav-top-desktop: 225px;
+
+    --main-padding-top: 300px;
+    --section-min-height: 100vh;
+
+    /* Motion */
     --transition-fast: 0.2s ease;
     --transition-slow: 0.4s ease;
     --transition-bounce: 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    --scale-hover: 1.15;
+    --scale-active: 1.25;
+
 }

@@ -1,11 +1,3 @@
-<script>
-    import Header from "$lib/Header.svelte";
-    import Navigation from "$lib/Navigation.svelte";
-</script>
-
-<Header />
-
-<Navigation />
 
 <main>
     <section id="about">
@@ -22,17 +14,13 @@
 </main>
 
 <style>
-    :global(html) {
-        scroll-behavior: smooth;
-    }
-
     main {
-        padding-top: 300px;
+        padding-top: var(--main-padding-top);
     }
 
     section {
-        min-height: 100vh;
-        padding: 2rem;
-        scroll-margin-top: 8rem;
+        min-height: var(--section-min-height);
+        padding: var(--space-lg);
+        scroll-margin-top: var(--space-section);
     }
 </style>

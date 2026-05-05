@@ -14,7 +14,7 @@
 
                 const rect = el.getBoundingClientRect();
 
-                if (rect.top <= 200 && rect.bottom >= 200) {
+                if (rect.top <= 350 && rect.bottom >= 350) {
                     active = id;
                 }
             }
@@ -30,16 +30,16 @@
 </script>
 
 <nav class="section-nav" aria-label="Section navigation">
-    <a href="#about" aria-label="Go to About Me" class:active={active === "about"}>
-        <img src="{base}/images/icons/profile.svg" alt="" />
+    <a href="#about" aria-label="Go to About Me" class:active={active === "about"} on:click={() => active = "about"}>
+        <img src={`${base}/images/icons/profile.svg`} alt="" />
     </a>
 
-    <a href="#tech" aria-label="Go to Technologies / Software" class:active={active === "tech"}>
-        <img src="{base}/images/icons/tech.svg" alt="" />
+    <a href="#tech" aria-label="Go to Technologies / Software" class:active={active === "tech"} on:click={() => active = "tech"}>
+        <img src={`${base}/images/icons/tech.svg`} alt="" />
     </a>
 
-    <a href="#projects" aria-label="Go to Projects" class:active={active === "projects"}>
-        <img src="{base}/images/icons/projects.svg" alt="" />
+    <a href="#projects" aria-label="Go to Projects" class:active={active === "projects"} on:click={() => active = "projects"}>
+        <img src={`${base}/images/icons/projects.svg`} alt="" />
     </a>
 </nav>
 
@@ -49,24 +49,25 @@
         width: 32px;
         height: 32px;
         display: block;
-        transition: transform 0.2s ease;
+        object-fit: contain;
+        transition: transform var(--transition-fast);
     }
 
     .section-nav a:hover img {
-        transform: scale(1.15);
+        transform: scale(var(--scale-hover));
     }
 
     .section-nav {
         position: fixed;
-        top: 225px;
+        top: var(--nav-top-desktop);
         left: 50%;
         transform: translateX(-50%);
         z-index: 100;
         
-        width: 320px;
+        width: var(--nav-width-desktop);
         padding: 0.4rem 1rem;
-        border-radius: 999px;
-        background: #f9e983;
+        border-radius: var(--radius-pill);
+        background: var(--color-primary);
 
         display: flex;
         justify-content: space-around;
@@ -74,24 +75,24 @@
     }
 
     .section-nav a {
-        color: #a89b86;
+        color: var(--color-text-muted);
         font-size: 1.8rem;
         text-decoration: none;
         line-height: 1;
-        transition: transform 0.2s ease, filter 0.2s ease;
+        transition: transform var(--transition-fast), filter var(--transition-fast);
     }
 
     .section-nav a.active {
-        filter: drop-shadow(0 0 6px rgba(249, 233, 131, 0.9));
+        filter: drop-shadow(0 0 6px var(--color-glow-primary));
     }
 
     .section-nav a.active img {
-        transform: scale(1.25);
+        transform: scale(var(--scale-active));
     }
 
     @media (max-width: 500px) {
         .section-nav {
-            width: 240px;
+            width: var(--nav-width-mobile);
         }
     }
 
