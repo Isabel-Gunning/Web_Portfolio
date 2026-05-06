@@ -27,8 +27,14 @@
             <img src= {images[currentImage]} alt="Portrait illustration" />
         
             <div class="image-controls">
-                <button on:click={previousImage}> ← </button>
-                <button on:click={nextImage}> → </button>
+                <button on:click={previousImage} aria-label="Previous image">
+                    <img src={`${base}/images/icons/arrow-left.svg`} alt="" />
+                </button>
+
+
+                <button on:click={nextImage} aria-label="Next image">
+                    <img src={`${base}/images/icons/arrow-right.svg`} alt="" />
+                </button>
             </div>
         </div>
 
@@ -89,8 +95,8 @@
     }
 
     .image-controls button {
-        width: 42px;
-        height: 32px;
+        width: 52px;
+        height: 44px;
         border-radius: var(--radius-pill);
 
         background: var(--color-primary);
@@ -103,6 +109,13 @@
 
     .image-controls button:hover {
         transform: scale(var(--scale-hover));
+    }
+
+    .image-controls button img {
+        width: 36px;
+        height: 36px;
+
+        object-fit: contain;
     }
 
     .about-text {
