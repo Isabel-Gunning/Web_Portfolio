@@ -1,7 +1,10 @@
 <script>
+
+    import {base} from "$app/paths";
+
     const images = [
-        "/images/pictures/profile-image.png",
-        "/images/pictures/Isabel_Gunning.jpg"
+        `${base}/images/pictures/profile-image.png`,
+        `${base}/images/pictures/Isabel_Gunning.jpg`
     ];
 
     let currentImage = 0;
