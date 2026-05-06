@@ -58,8 +58,16 @@
     --nav-width-mobile: 240px;
     --nav-top-desktop: 225px;
 
-    --main-padding-top: 300px;
+    --main-padding-top: 150px;
+    --main-padding-top-mobile: 150px;
+
+    --about-mobile-gap-top: 150px;
+    --about-image-width-mobile:220px;
+    --about-image-height-mobile: 260px;
+
     --section-min-height: 100vh;
+
+    
 
     /* Motion */
     --transition-fast: 0.2s ease;

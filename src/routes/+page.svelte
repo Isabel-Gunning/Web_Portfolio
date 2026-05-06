@@ -1,16 +1,13 @@
+<script>
+    import AboutSection from "$lib/components/AboutSection.svelte";
+	import ProjectsSection from "$lib/components/ProjectsSection.svelte";
+	import TechSection from "$lib/components/TechSection.svelte";
+</script>
 
 <main>
-    <section id="about">
-        <h1> About Me </h1>
-    </section>
-
-    <section id="tech">
-        <h1>Technologies / Software</h1>
-    </section>
-
-    <section id="projects">
-        <h1>Projects</h1>
-    </section>
+    <AboutSection/>
+    <TechSection/>
+    <ProjectsSection/>
 </main>
 
 <style>
@@ -18,9 +15,10 @@
         padding-top: var(--main-padding-top);
     }
 
-    section {
-        min-height: var(--section-min-height);
-        padding: var(--space-lg);
-        scroll-margin-top: var(--space-section);
-    }
+   @media (max-width: 800px) {
+        main {
+            padding-top: var(--main-padding-top-mobile);
+        }
+   }
+
 </style>
