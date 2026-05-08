@@ -1,45 +1,19 @@
 <script>
+    import { base } from "$app/paths";
 
-    import {base} from "$app/paths";
-
-    const images = [
-        `${base}/images/pictures/profile-image.png`,
-        `${base}/images/pictures/Isabel_Gunning.jpg`
-    ];
-
-    let currentImage = 0;
-    
-    function previousImage() {
-        currentImage = currentImage === 0 ? images.length - 1 : currentImage - 1;
-    }
-
-    function nextImage() {
-        currentImage = currentImage === images.length - 1 ? 0 : currentImage + 1;
-    }
-    
+    const profileImage = `${base}/images/pictures/Isabel_Gunning.jpg`;
 </script>
 
-<section id = "about" class="about-section">
+<section id="about" class="about-section">
     
     <div class="about-content">
         
         <div class="profile-card"> 
-            <img src= {images[currentImage]} alt="Portrait illustration" />
-        
-            <div class="image-controls">
-                <button on:click={previousImage} aria-label="Previous image">
-                    <img src={`${base}/images/icons/arrow-left.svg`} alt="" />
-                </button>
-
-
-                <button on:click={nextImage} aria-label="Next image">
-                    <img src={`${base}/images/icons/arrow-right.svg`} alt="" />
-                </button>
-            </div>
+            <img src={profileImage} alt="Portrait illustration" />
         </div>
 
-        <div class ="about-text">
-            <h1> About Me ... </h1>
+        <div class="about-text">
+            <h1>About Me ...</h1>
 
             <p>
                 About me will go here!
@@ -67,7 +41,7 @@
 
     .about-content {
         width: 100%;
-        max-width: 1100px;
+        max-width: 1500px;
 
         display: flex;
         align-items: center;
@@ -75,47 +49,16 @@
         gap: var(--space-xl);
     }
 
-    .profile-card img {
-        width: 220px;
-        height: 280px;
-        object-fit: cover;
-        object-position: center;
-        border-radius: var(--radius-lg);
-    }
-
     .profile-card {
         flex-shrink: 0;
     }
 
-    .image-controls {
-        display: flex;
-        justify-content: center;
-        gap: var(--space-md);
-        margin-top: var(--space-md);
-    }
-
-    .image-controls button {
-        width: 52px;
-        height: 44px;
-        border-radius: var(--radius-pill);
-
-        background: var(--color-primary);
-        color: var(--color-text-muted);
-        
-        font-size: var(--font-lg);
-
-        transition: transform var(--transition-fast);
-    }
-
-    .image-controls button:hover {
-        transform: scale(var(--scale-hover));
-    }
-
-    .image-controls button img {
-        width: 36px;
-        height: 36px;
-
-        object-fit: contain;
+    .profile-card img {
+        width: 280px;
+        height: 330px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: var(--radius-lg);
     }
 
     .about-text {
@@ -162,17 +105,12 @@
         .profile-card {
             width: 100%;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: center;
         }
 
         .profile-card img {
             width: var(--about-image-width-mobile);
             height: var(--about-image-height-mobile);
-        }
-
-        .image-controls {
-            margin-top: var(--space-md);
         }
 
         .about-text {
@@ -191,5 +129,4 @@
             line-height: 1.7;
         }
     }
-
 </style>
