@@ -21,11 +21,10 @@
             icon: `${base}/images/icons/projects.svg`
         },
         {
-            id:"qa",
-            label:"Q&A",
+            id: "qa",
+            label: "Q&A",
             icon: `${base}/images/icons/questions.svg`
         }
-
     ];
 
     onMount(() => {
