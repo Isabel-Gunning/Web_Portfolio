@@ -29,8 +29,9 @@
 
     onMount(() => {
         const handleScroll = () => {
-            for (let link of links) {
+            for (const link of links) {
                 const el = document.getElementById(link.id);
+                
                 if (!el) continue;
 
                 const rect = el.getBoundingClientRect();
@@ -65,17 +66,17 @@
 
 <style>
     .section-nav {
-        position: fixed;
-        top: var(--nav-top-desktop);
-        left: 50%;
-        transform: translateX(-50%);
+        position: sticky;
+        top: 12px;
         z-index: 100;
+
+        margin: 0 auto;
 
         width: 520px;
         padding: 0.35rem;
 
         border-radius: var(--radius-pill);
-        background: rgba(255, 255, 255, 0.75);
+        background: rgba(255, 255, 255, 0.85);
 
         display: flex;
         align-items: center;
