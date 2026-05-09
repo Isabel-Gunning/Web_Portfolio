@@ -2,6 +2,9 @@
     import { base } from "$app/paths";
 
     const profileImage = `${base}/images/pictures/Isabel_Gunning.jpg`;
+
+    let showMore = false;
+
 </script>
 
 <section id="about" class="about-section">
@@ -16,12 +19,23 @@
             <h1>About Me ...</h1>
 
             <p>
-                About me will go here!
+                Hey! My name is Isabel Gunning.
+                I have a huge passion for all things art and animation and I create to build worlds that didn't exsist before. 
+                
             </p>
 
+            {#if showMore}
             <p> 
-                Describe my interests, creative style, programming experience, and goals.
+                My journey began with a childhood curiosity for design, which has since evolved into a passion for creating unique, weird and wonderful characters through art and animation. 
+                Creativity is my ultimate escape and my greatest freedom. 
+                My goal is simple, to translate the amazement and peace I find in the creative process into visual expierences that spark that same joy for others!
             </p>
+            {/if}
+
+            <button class="read-more-button" on:click={() => showMore = !showMore}>
+                {showMore ? "Read less" : "Read more"}
+            </button>
+
         </div>
 
     </div>
@@ -31,11 +45,11 @@
 <style>
     .about-section {
         min-height: var(--section-min-height);
-        padding: var(--space-lg);
+        padding: 180px var(--space-lg) var(--space-xl);
         scroll-margin-top: var(--space-section);
 
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
     }
 
@@ -44,7 +58,7 @@
         max-width: 1500px;
 
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         gap: var(--space-xl);
     }
@@ -63,7 +77,7 @@
 
     .about-text {
         max-width: 500px;
-        margin-top: -30px;
+        margin-top: 30px;
     }
 
     .about-text h1 {
@@ -75,8 +89,29 @@
         line-height: 1.8;
     }
 
-    @media (max-width: 1000px) {
+    .read-more-button {
+        margin-top: var(--space-md);
+        padding: 0.8rem 1.4rem;
 
+        border: none;
+        border-radius: var(--radius-pill);
+
+        background: var(--color-primary);
+        color: var(--color-text-primary);
+
+        font-family: var(--font-body);
+        font-size: var(--font-base);
+
+        cursor: pointer;
+
+        transition: transform var(--transition-fast);
+    }
+
+    .read-more-button:hover {
+        transform: scale(var(--scale-hover));
+    }
+
+    @media (max-width: 1000px) {
         .about-section {
             min-height: auto;
             padding: 
