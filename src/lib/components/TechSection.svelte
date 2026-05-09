@@ -15,21 +15,21 @@
     {name:"After Effects", category:"art", icon:`${base}/images/icons/aftereffects.svg`},
     {name:"Premiere Pro", category:"art", icon:`${base}/images/icons/premierepro.svg`},
     {name:"Inkscape", category:"art", icon:`${base}/images/icons/inkscape.svg`},
-    {name:"Ibis Paint", category:"art", icon:`${base}/images/icons/ibispaint.svg`},
+    {name:"Ibis Paint", category:"art", icon:`${base}/images/icons/ibispaint.png`},
     {name:"Krita", category:"art", icon:`${base}/images/icons/krita.svg`},
     {name:"Aseprite", category:"art", icon:`${base}/images/icons/aseprite.svg`},
-    {name:"Autodesk Maya", category:"art", icon:`${base}/images/icons/autodeskmaya.svg`},
+    {name:"Autodesk Maya", category:"art", icon:`${base}/images/icons/autodeskmaya.jpg`},
 
     // Design Software
     {name:"Figma", category:"design", icon:`${base}/images/icons/figma.svg`},
     {name:"Penpot", category:"design", icon:`${base}/images/icons/penpot.svg`},
     {name:"Canva", category:"design", icon:`${base}/images/icons/canva.svg`},
-    {name:"FontStruct", category:"design", icon:`${base}/images/icons/fontstruct.svg`},
+    {name:"FontStruct", category:"design", icon:`${base}/images/icons/fontstruct.jpg`},
 
     // Coding Languages & Software
     {name:"HTML5", category:"coding", icon:`${base}/images/icons/html5.svg`},
     {name:"CSS", category:"coding", icon:`${base}/images/icons/css.svg`},
-    {name:"JavaScript", category:"coding", icon:`${base}/images/icons/javascript.svg`},
+    {name:"JavaScript", category:"coding", icon:`${base}/images/icons/js.svg`},
     {name:"C++", category:"coding", icon:`${base}/images/icons/cpp.svg`},
     {name:"Svelte", category:"coding", icon:`${base}/images/icons/svelte.svg`},
     {name:"GitHub", category:"coding", icon:`${base}/images/icons/github.svg`},
@@ -187,7 +187,7 @@
 
     .tool-note:nth-child(even) {
         transform: rotate(1.5deg);
-        background: #fffdf2;
+    
     }
 
     .tool-note:hover {

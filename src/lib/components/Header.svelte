@@ -23,6 +23,7 @@
         left: 0;
         z-index: 50;
 		overflow: hidden;
+		pointer-events: none;
 	}
 
 	svg {

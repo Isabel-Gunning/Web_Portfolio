@@ -45,7 +45,7 @@
 <style>
     .about-section {
         min-height: var(--section-min-height);
-        padding: 180px var(--space-lg) var(--space-xl);
+        padding: 70px var(--space-lg) var(--space-xl);
         scroll-margin-top: var(--space-section);
 
         display: flex;
