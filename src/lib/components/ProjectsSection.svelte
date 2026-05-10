@@ -4,27 +4,27 @@
     const projectCategories = [
         {
             name:"Art",
-            icon: `${base}/images/icons/art.svg`,
+            icon: `${base}/images/icons/art.png`,
             link: "/projects/art"
         },
         {
             name:"Animation",
-            icon: `${base}/images/icons/animation.svg`,
+            icon: `${base}/images/icons/animation.png`,
             link: "/projects/animation"
         },
         {
             name:"Coding",
-            icon: `${base}/images/icons/coding.svg`,
+            icon: `${base}/images/icons/coding.png`,
             link: "/projects/art"
         },
         {
             name:"3D Modelling",
-            icon: `${base}/images/icons/3d.svg`,
+            icon: `${base}/images/icons/3d.png`,
             link: "/projects/art"
         },
         {
             name:"Crocheting",
-            icon: `${base}/images/icons/crocheting.svg`,
+            icon: `${base}/images/icons/crocheting.png`,
             link: "/projects/crocheting"
         }
     ];
@@ -109,7 +109,7 @@
         position: relative;
         width: 100%;
         max-width: 220px;
-        height: 170px;
+        height: 160px;
         text-decoration: none;
         background: #aed5ee;
         border-radius: 18px;
@@ -182,7 +182,7 @@
         
         background: #aed1e9;
         box-shadow: 
-            inset 0 4px 0 rgba(159, 189, 210, 0.85),
+            inset 0 4px 0 #b9dcef,
             inset 0 -18px 26px rgba(91, 139, 170, 0.28),
             0 10px 16px rgba(85, 49, 27, 0.08);
     }
