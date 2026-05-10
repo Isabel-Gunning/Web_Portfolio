@@ -4,27 +4,27 @@
     const projectCategories = [
         {
             name:"Art",
-            image: `${base}/images/projects/art.jpg`,
+            image: `${base}/images/pictures/art.png`,
             link: "/projects/art"
         },
         {
             name:"Animation",
-            image: `${base}/images/projects/animation.jpg`,
+            image: `${base}/images/pictures/animation.jpg`,
             link: "/projects/animation"
         },
         {
             name:"Coding",
-            image: `${base}/images/projects/coding.jpg`,
+            image: `${base}/images/pictures/coding.png`,
             link: "/projects/coding"
         },
         {
             name:"3D Modelling",
-            image: `${base}/images/projects/3d.jpg`,
+            image: `${base}/images/pictures/3d.png`,
             link: "/projects/3d"
         },
         {
             name:"Crocheting",
-            image: `${base}/images/projects/crocheting.jpg`,
+            image: `${base}/images/pictures/crocheting.jpg`,
             link: "/projects/crocheting"
         }
     ];
