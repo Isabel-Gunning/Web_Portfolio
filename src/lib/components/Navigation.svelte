@@ -24,6 +24,11 @@
             id: "qa",
             label: "Q&A",
             icon: `${base}/images/icons/questions.svg`
+        },
+        {
+            id: "contact",
+            label: "Contact",
+            icon: `${base}/images/icons/contact.svg`
         }
     ];
 

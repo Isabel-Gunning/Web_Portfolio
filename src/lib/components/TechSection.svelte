@@ -4,7 +4,7 @@
     
     let activeFilter = "art";
 
-    const filters = ["art", "design","coding"];
+    const filters = ["art", "design", "3D Modelling", "coding"];
 
     const tools = [
 
@@ -18,7 +18,9 @@
     {name:"Ibis Paint", category:"art", icon:`${base}/images/icons/ibispaint.png`},
     {name:"Krita", category:"art", icon:`${base}/images/icons/krita.svg`},
     {name:"Aseprite", category:"art", icon:`${base}/images/icons/aseprite.svg`},
-    {name:"Autodesk Maya", category:"art", icon:`${base}/images/icons/autodeskmaya.jpg`},
+    
+    //3D Modelling software
+    {name:"Autodesk Maya", category:"3D Modelling", icon:`${base}/images/icons/autodeskmaya.jpg`},
 
     // Design Software
     {name:"Figma", category:"design", icon:`${base}/images/icons/figma.svg`},
@@ -51,7 +53,7 @@
         <h1>Technologies / Software</h1>
 
         <p>
-            A collection of creative and technical tools I have explored through art, design and coding!
+            A collection of creative and technical tools I have explored across art, design, 3D modelling and coding!
         </p>
 
         <div class ="filter-nav">
@@ -154,8 +156,9 @@
         min-height: 430px;
         display: grid;
         grid-template-columns:
-            repeat(auto-fit, minmax(170px, 1fr));
-        
+            repeat(auto-fit, minmax(170px, 190px));
+            
+        justify-content: center;
         align-content: start;
         gap: var(--space-lg);
         transition: all 0.25s ease;
