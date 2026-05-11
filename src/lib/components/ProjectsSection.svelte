@@ -65,12 +65,10 @@
 <style>
     .projects-section {
         min-height: var(--section-min-height);
-        padding: 
-            3rem
-            var(--space-xl)
-            var(--space-xl);
-
-        scroll-margin-top: 70px;
+        padding-top: 10px;
+	    padding-inline: var(--space-lg);
+	    padding-bottom: var(--space-xl);
+        scroll-margin-top: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -179,9 +177,7 @@
     @media (max-width: 800px) {
 
         .projects-section {
-            padding:
-                var(--space-xl)
-                var(--space-md);
+            padding: 90px var(--space-xl) var(--space-md);
         }
 
         .projects-content p {
@@ -194,19 +190,21 @@
         }
 
         .project-polaroid {
-			max-width: 165px;
+			max-width: 145px;
 			padding:
-				0.8rem
-				0.8rem
-				1rem;
+				0.65rem
+				0.65rem
+				0.80rem;
 		}
 
 		.polaroid-image {
-			height: 125px;
+			height: 80px;
+            margin-bottom: 0.2rem;
 		}
 
 		.polaroid-caption h2 {
 			font-size: var(--font-base);
+            line-height: 1.2;
 		}
     }
 </style>

@@ -6,23 +6,9 @@
 	import TechSection from "$lib/components/TechSection.svelte";
 </script>
 
-<main>
-    <AboutSection/>
-    <TechSection/>
-    <ProjectsSection/>
-    <QuestionsSection />
-    <ContactSection />
-</main>
 
-<style>
-    main {
-        padding-top: var(--main-padding-top);
-    }
-
-   @media (max-width: 800px) {
-        main {
-            padding-top: var(--main-padding-top-mobile);
-        }
-   }
-
-</style>
+<AboutSection/>
+<TechSection/>
+<ProjectsSection/>
+<QuestionsSection />
+<ContactSection />

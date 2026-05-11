@@ -61,7 +61,7 @@
     --main-padding-top: 150px;
     --main-padding-top-mobile: 150px;
 
-    --about-mobile-gap-top: 150px;
+    --about-mobile-gap-top: 10px;
     --about-image-width-mobile:220px;
     --about-image-height-mobile: 260px;
 

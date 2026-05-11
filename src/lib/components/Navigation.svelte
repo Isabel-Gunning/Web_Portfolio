@@ -136,17 +136,21 @@
     @media (max-width: 650px) {
         .section-nav {
             width: 90%;
+            padding: 0.4rem;
         }
 
         .section-nav a {
-            padding: 0.7rem 0.5rem;
-            font-size: var(--font-sm);
-            gap: 0.35rem;
+            padding: 0.7rem 0.4rem;
+            gap: 0;
+        }
+
+        .section-nav a span {
+            display: none;
         }
 
         .section-nav img {
-            width: 22px;
-            height: 22px;
+            width: 24px;
+            height: 24px;
         }
     }
 </style>

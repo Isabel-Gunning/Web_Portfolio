@@ -65,8 +65,8 @@
 <style>
     .qa-section {
 		min-height: auto;
-		padding-top: 70px;
-		scroll-margin-top: var(--space-section);
+		padding-top: 20px;
+		scroll-margin-top: 170px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -231,15 +231,22 @@
     @media (max-width: 800px) {
 
         .qa-section {
-			padding: var(--space-xl) var(--space-md);
+			padding: 100px var(--space-md) var(--space-xl);
+			scroll-margin-top: 100px;
 		}
 
 		.qa-heading h1 {
-			font-size: var(--font-xxl);
+			font-size: 3.2rem;
+			line-height: 1.05;
+			max-width: 340px;
+			margin: 0 auto var(--space-md);
 		}
 
 		.qa-heading p {
-			font-size: var(--font-base);
+			font-size: 1.45rem;
+			line-height: 1.7;
+			max-width: 340px;
+			margin: 0 auto var(--space-md);
 		}
 
 		.notebook {

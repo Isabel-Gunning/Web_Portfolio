@@ -16,3 +16,15 @@
 <Footer />
 <ScrollToTop />
 
+<style>
+    main {
+        padding-top: var(--main-padding-top);
+    }
+
+   @media (max-width: 800px) {
+        main {
+            padding-top: var(--main-padding-top-mobile);
+        }
+   }
+
+</style>

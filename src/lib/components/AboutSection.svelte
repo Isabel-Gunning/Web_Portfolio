@@ -44,9 +44,11 @@
 
 <style>
     .about-section {
-        min-height: var(--section-min-height);
-        padding: 70px var(--space-lg) var(--space-xl);
-        scroll-margin-top: var(--space-section);
+        min-height: auto;
+        padding-top: 20px;
+	    padding-inline: var(--space-lg);
+	    padding-bottom: var(--space-xl);
+        scroll-margin-top: 220px;
 
         display: flex;
         align-items: flex-start;
@@ -114,11 +116,7 @@
     @media (max-width: 1000px) {
         .about-section {
             min-height: auto;
-            padding: 
-                var(--about-mobile-gap-top)
-                var(--space-md)
-                var(--space-xl);
-            
+            padding: 15px var(--space-md) var(--space-xl);
             overflow-x: hidden;
         }
 
