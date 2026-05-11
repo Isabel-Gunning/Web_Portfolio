@@ -1,64 +1,96 @@
-<script> 
-    import {base} from "$app/paths";
-
-    const projectCategories = [
-        {
-            name:"Art",
-            image: `${base}/images/pictures/art.png`,
-            link: "/projects/art"
-        },
-        {
-            name:"Animation",
-            image: `${base}/images/pictures/animation.jpg`,
-            link: "/projects/animation"
-        },
-        {
-            name:"Coding",
-            image: `${base}/images/pictures/coding.png`,
-            link: "/projects/coding"
-        },
-        {
-            name:"3D Modelling",
-            image: `${base}/images/pictures/3d.png`,
-            link: "/projects/3d"
-        },
-        {
-            name:"Crocheting",
-            image: `${base}/images/pictures/crocheting.jpg`,
-            link: "/projects/crocheting"
-        }
-    ];
+<script>
+	import { base, resolve } from "$app/paths";
 </script>
 
 <section id="projects" class="projects-section">
 
-    <div class="projects-content">
-        <h1>Projects I've Worked On</h1>
+	<div class="projects-content">
+		<h1>Projects I've Worked On</h1>
 
-        <p>
-            A collection of projects I've worked on across different creative mediums. Click a polaroid below to explore each project category!
-        </p>
+		<p>
+			A collection of projects I've worked on across different creative mediums.
+			Click a polaroid below to explore each project category!
+		</p>
 
-        <div class="project-grid">
-            {#each projectCategories as category (category.name)}
+		<div class="project-grid">
 
-            	<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-                <a href={category.link} class="project-polaroid">
+			<a href={resolve("/projects/art")} class="project-polaroid">
+				<div class="polaroid-tape"></div>
 
-					<div class="polaroid-tape"></div>
+				<div class="polaroid-image">
+					<img
+						src={`${base}/images/pictures/art.png`}
+						alt="Art project preview"
+					/>
+				</div>
 
-					<div class="polaroid-image">
-						<img src={category.image} alt={category.name} />
-					</div>
+				<div class="polaroid-caption">
+					<h2>Art</h2>
+				</div>
+			</a>
 
-					<div class="polaroid-caption">
-						<h2>{category.name}</h2>
-					</div>
+			<a href={resolve("/projects/animation")} class="project-polaroid">
+				<div class="polaroid-tape"></div>
 
-				</a>
-            {/each}
-        </div>
-    </div>
+				<div class="polaroid-image">
+					<img
+						src={`${base}/images/pictures/animation.jpg`}
+						alt="Animation project preview"
+					/>
+				</div>
+
+				<div class="polaroid-caption">
+					<h2>Animation</h2>
+				</div>
+			</a>
+
+			<a href={resolve("/projects/coding")} class="project-polaroid">
+				<div class="polaroid-tape"></div>
+
+				<div class="polaroid-image">
+					<img
+						src={`${base}/images/pictures/coding.png`}
+						alt="Coding project preview"
+					/>
+				</div>
+
+				<div class="polaroid-caption">
+					<h2>Coding</h2>
+				</div>
+			</a>
+
+			<a href={resolve("/projects/3d")} class="project-polaroid">
+				<div class="polaroid-tape"></div>
+
+				<div class="polaroid-image">
+					<img
+						src={`${base}/images/pictures/3d.png`}
+						alt="3D modelling project preview"
+					/>
+				</div>
+
+				<div class="polaroid-caption">
+					<h2>3D Modelling</h2>
+				</div>
+			</a>
+
+			<a href={resolve("/projects/crocheting")} class="project-polaroid">
+				<div class="polaroid-tape"></div>
+
+				<div class="polaroid-image">
+					<img
+						src={`${base}/images/pictures/crocheting.jpg`}
+						alt="Crocheting project preview"
+					/>
+				</div>
+
+				<div class="polaroid-caption">
+					<h2>Crocheting</h2>
+				</div>
+			</a>
+
+		</div>
+	</div>
 
 </section>
 
@@ -68,7 +100,7 @@
         padding-top: 10px;
 	    padding-inline: var(--space-lg);
 	    padding-bottom: var(--space-xl);
-        scroll-margin-top: 100px;
+        scroll-margin-top: 90px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -88,7 +120,7 @@
         max-width: 900px;
         margin: 
             0 auto
-            5.5rem;
+            4rem;
 
         font-size: var(--font-lg);
         line-height: 1.7;
@@ -178,6 +210,7 @@
 
         .projects-section {
             padding: 90px var(--space-xl) var(--space-md);
+            scroll-margin-top: 110px;
         }
 
         .projects-content p {
