@@ -141,8 +141,8 @@
 		position: relative;
 		width: 100%;
 		max-width: 190px;
-		background-color: #fffaf0;
-		border: 2px solid rgba(85, 49, 27, 0.08);
+		background-color: var(--project-card-background);
+		border: 2px solid var(--project-card-border);
 		border-radius: 18px;
 		padding:
 			0.9rem
@@ -151,7 +151,7 @@
 
 		text-decoration: none;
 		color: var(--color-text-primary);
-		box-shadow: 10px 12px 0 rgba(85, 49, 27, 0.12);
+		box-shadow: 10px 12px 0 var(--project-card-shadow);
 		transform: rotate(-1.5deg);
 		transition:
 			transform var(--transition-fast),
@@ -164,7 +164,7 @@
 
     .project-polaroid:hover {
         transform: rotate(0deg) translateY(-8px);
-        box-shadow: 14px 18px 0 rgba(85, 49, 27, 0.14);
+        box-shadow: 14px 18px 0 var(--project-card-shadow-hover);
     }
 
     .polaroid-tape {
@@ -173,10 +173,10 @@
 		left: 50%;
 		width: 72px;
 		height: 28px;
-		background-color: #aed5ee;
+		background-color: var(--project-tape-background);
 		border-radius: 6px;
 		transform: translateX(-50%) rotate(-3deg);
-		box-shadow: 3px 3px 0 rgba(85, 49, 27, 0.08);
+		box-shadow: 3px 3px 0 var(--project-tape-shadow);
 	}
 
     .project-polaroid:nth-child(even) 
@@ -189,7 +189,7 @@
 		border-radius: 14px;
 		overflow: hidden;
 		margin-bottom: 1rem;
-		background-color: #f4f4f4;
+		background-color: var(--project-image-background);
 	}
 
     .polaroid-image img {

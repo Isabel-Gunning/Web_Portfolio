@@ -104,11 +104,11 @@
 	.notebook-page {
 		position: relative;
 		height: clamp(330px, 42vh, 390px);
-		background-color: #fffaf0;
-		border: 2px solid rgba(85, 49, 27, 0.08);
+		background-color: var(--qa-page-background);
+		border: 2px solid var(--qa-page-border);
 		border-radius: var(--radius-lg);
 		padding: var(--space-lg) var(--space-xl);
-		box-shadow: 14px 14px 0 rgba(85, 49, 27, 0.14);
+		box-shadow: 14px 14px 0 var(--qa-page-shadow);
 		overflow: hidden;
 	}
 
@@ -120,7 +120,7 @@
 			to bottom,
 			transparent 0,
 			transparent 37px,
-			rgba(85, 49, 27, 0.14) 38px
+			var(--qa-page-line) 38px
 		);
 
 		pointer-events: none;
@@ -132,7 +132,7 @@
 		top: 0;
 		bottom: 0;
 		width: 3px;
-		background-color: rgba(185, 154, 245, 0.55);
+		background-color: var(--qa-notebook-margin-line);
 	}
 
     .page-bubbles {
@@ -145,7 +145,7 @@
 		overflow-y: auto;
 		padding-right: var(--space-md);
 		scrollbar-width: thin;
-		scrollbar-color: #d7c6ff transparent;
+		scrollbar-color: var(--qa-scrollbar-thumb) transparent;
 	}
 
     .page-bubbles::-webkit-scrollbar {
@@ -157,7 +157,7 @@
 	}
 
 	.page-bubbles::-webkit-scrollbar-thumb {
-		background-color: #d7c6ff;
+		background-color: var(--qa-scrollbar-thumb);
 		border-radius: var(--radius-pill);
 	}
 
@@ -178,16 +178,16 @@
 		max-width: 68%;
 		padding: 0.75rem 1.4rem;
 		color: var(--color-text-primary);
-		box-shadow: 6px 6px 0 rgba(85, 49, 27, 0.12);
+		box-shadow: 6px 6px 0 var(--qa-bubble-shadow);
 	}
 
     .question-bubble {
-		background-color: #d7c6ff;
+		background-color: var(--qa-question-background);
 		border-radius: 22px;
 	}
 
 	.answer-bubble {
-		background-color: #b8ebc1;
+		background-color: var(--qa-answer-background);
 		border-radius: 22px;
 
 		margin-left: var(--space-lg);
@@ -206,9 +206,19 @@
 		width: 26px;
 		height: 26px;
 		border-radius: var(--radius-pill);
-		background-color: rgba(255, 255, 255, 0.8);
+		background-color: var(--qa-letter-background);
 		font-weight: bold;
 		margin-right: var(--space-sm);
+	}
+
+	.question-bubble span {
+	background-color: var(--qa-question-letter-background);
+	color: var(--qa-question-letter-text);
+	}
+
+	.answer-bubble span {
+		background-color: var(--qa-answer-letter-background);
+		color: var(--qa-answer-letter-text);
 	}
 
     .question-bubble p,

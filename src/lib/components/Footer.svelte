@@ -9,11 +9,9 @@
 		padding: var(--space-lg);
 		background: var(--color-primary);
 		color: var(--color-text-primary);
-
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
 		text-align: center;
 	}
 

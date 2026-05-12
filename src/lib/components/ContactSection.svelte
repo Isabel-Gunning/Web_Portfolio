@@ -134,9 +134,9 @@
 			1.6rem
 			1rem;
 
-		background-color: #f8d7e3;
+		background-color: var(--contact-card-background);
 		border-radius: 24px;
-		box-shadow: 10px 12px 0 rgba(85, 49, 27, 0.10);
+		box-shadow: 10px 12px 0 var(--contact-card-shadow);
 		text-align: center;
 		transition:
 			transform var(--transition-fast),
@@ -145,7 +145,7 @@
 
 	.contact-card:hover {
 		transform: translateY(-6px);
-		box-shadow: 14px 16px 0 rgba(85, 49, 27, 0.12);
+		box-shadow: 14px 16px 0 var(--contact-card-shadow-hover);
 	}
 
 	.icon-wrapper {
@@ -179,14 +179,14 @@
 	.contact-card p {
 		font-family: var(--font-body);
 		font-size: var(--font-base);
-		color: #8a4d67;
+		color: var(--contact-link-text);
 		text-decoration: none;
 		word-break: break-word;
 		transition: color var(--transition-fast);
 	}
 
 	.contact-card a:hover {
-		color: #b05f83;
+		color: var(--contact-link-hover);
 	}
 
 	@media (max-width: 800px) {

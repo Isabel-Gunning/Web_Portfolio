@@ -17,35 +17,23 @@
 <style>
     .scroll-top {
     position: fixed;
-
     bottom: 24px;
     right: 24px;
-
     width: 56px;
     height: 42px;
-
     border-radius: var(--radius-pill);
-
-    background: rgba(249, 233, 131, 0.75);
-
+    background: var(--floating-button-background);
     backdrop-filter: blur(6px);
-
     border: none;
     cursor: pointer;
-
     color: var(--color-text-muted);
-
     font-size: 1.4rem;
     font-weight: bold;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     z-index: 999;
-
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-
+    box-shadow: 0 4px 12px var(--floating-button-shadow);
     transition:
         transform var(--transition-fast),
         background-color var(--transition-fast),
@@ -54,14 +42,12 @@
 
     .scroll-top:hover {
         transform: scale(var(--scale-hover));
-
-        background: rgba(249, 233, 131, 0.95);
+        background: var(--floating-button-background-hover);
     }
 
     .scroll-top img {
         width: 28px;
         height: 28px;
-
         object-fit: contain;
     }
 
@@ -70,7 +56,6 @@
         .scroll-top {
             width: 50px;
             height: 38px;
-
             bottom: 18px;
             right: 18px;
 

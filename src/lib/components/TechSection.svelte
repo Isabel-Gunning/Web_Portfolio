@@ -124,7 +124,7 @@
         display: flex;
         gap: 0.25rem;
         border-radius: var(--radius-pill);
-        background: rgba(244, 238, 255, 0.85);
+        background: var(--tech-filter-background);
         backdrop-filter: blur(8px);
     }
 
@@ -144,8 +144,8 @@
     }
 
     .filter-nav button.active {
-        background: #d8c2ff;
-        color: #55311b;
+        background: var(--tech-filter-active-background);
+        color: var(--tech-filter-active-text);
     }
 
     .filter-nav button:hover {
@@ -172,7 +172,7 @@
             1rem
             1.5rem;
 
-        background: #e9ddff;
+        background: var(--tech-card-background);
         border-radius: 8px;
         display: flex;
         flex-direction: column;
@@ -182,7 +182,7 @@
             8px
             10px
             0
-            rgba(85, 49, 27, 0.12);
+            var(--tech-card-shadow);
 
         transform: rotate(-1.5deg);
         transition: transform var(--transition-fast);
@@ -204,13 +204,13 @@
         transform: translateX(-50%);
         width: 22px;
         height: 22px;
-        background: #9f7aea;
+        background: var(--tech-pin-background);
         border-radius: 50%;
         box-shadow: 
             0
             3px
             0
-            rgba(85, 49, 27, 0.25);
+            var(--tech-pin-shadow);
     }
 
     .tool-note img {

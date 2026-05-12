@@ -49,7 +49,6 @@
 	    padding-inline: var(--space-lg);
 	    padding-bottom: var(--space-xl);
         scroll-margin-top: 220px;
-
         display: flex;
         align-items: flex-start;
         justify-content: center;
@@ -58,7 +57,6 @@
     .about-content {
         width: 100%;
         max-width: 1500px;
-
         display: flex;
         align-items: flex-start;
         justify-content: center;
@@ -94,18 +92,13 @@
     .read-more-button {
         margin-top: var(--space-md);
         padding: 0.8rem 1.4rem;
-
         border: none;
         border-radius: var(--radius-pill);
-
         background: var(--color-primary);
         color: var(--color-text-primary);
-
         font-family: var(--font-body);
         font-size: var(--font-base);
-
         cursor: pointer;
-
         transition: transform var(--transition-fast);
     }
 
@@ -123,15 +116,11 @@
         .about-content {
             width: 100%;
             max-width: 100%;
-
             display: flex;
             flex-direction: column;
-
             align-items: center;
             justify-content: center;
-
             text-align: center;
-
             gap: var(--space-lg);
         }
 
