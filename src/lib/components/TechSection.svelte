@@ -61,7 +61,9 @@
             {#each filters as filter (filter)}
 
             <button
+                type="button"
                 class:active={activeFilter === filter}
+                aria-pressed={activeFilter === filter}
                 on:click={() => activeFilter = filter}
             >
                 {filter}

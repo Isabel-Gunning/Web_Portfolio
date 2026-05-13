@@ -21,6 +21,7 @@
 </script>
 
 <button
+	type="button"
 	class="accessibility-toggle"
 	on:click={toggleHighContrast}
 	aria-label={highContrast ? "Switch to light mode" : "Switch to dark mode"}

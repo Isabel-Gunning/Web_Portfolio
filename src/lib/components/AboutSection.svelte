@@ -25,14 +25,20 @@
             </p>
 
             {#if showMore}
-            <p> 
+            <p id="about-more-text"> 
                 My journey began with a childhood curiosity for design, which has since evolved into a passion for creating unique, weird and wonderful characters through art and animation. 
                 Creativity is my ultimate escape and my greatest freedom. 
                 My goal is simple, to translate the amazement and peace I find in the creative process into visual expierences that spark that same joy for others!
             </p>
             {/if}
 
-            <button class="read-more-button" on:click={() => showMore = !showMore}>
+            <button
+                type="button"
+                class="read-more-button"
+                aria-expanded={showMore}
+                aria-controls="about-more-text"
+                on:click={() => showMore = !showMore}
+            >
                 {showMore ? "Read less" : "Read more"}
             </button>
 

@@ -35,7 +35,9 @@
 <section class="project-page">
 	<div class="project-content">
 		<button
+			type="button"
 			class="back-link"
+			aria-label="Go back to projects section"
 			on:click={() => window.location.href = resolve("/") + "#projects"}
 		>
 			← Back to Projects
@@ -50,7 +52,9 @@
 			<div class="filter-nav">
 				{#each filters as filter (filter)}
 					<button
+						type="button"
 						class:active={activeFilter === filter}
+						aria-pressed={activeFilter === filter}
 						on:click={() => activeFilter = filter}
 					>
 						{filter}
@@ -70,13 +74,20 @@
 								loop
 								playsinline
 								preload="metadata"
+								tabindex="0"
+								aria-label={item.alt}
 								on:mouseenter={(event) => event.currentTarget.play()}
 								on:mouseleave={(event) => {
 									event.currentTarget.pause();
 									event.currentTarget.currentTime = 0;
 								}}
+								on:focus={(event) => event.currentTarget.play()}
+								on:blur={(event) => {
+									event.currentTarget.pause();
+									event.currentTarget.currentTime = 0;
+								}}
 							>
-								<track kind="captions" />
+								<track kind="captions" label="No spoken audio" srclang="en" />
 							</video>
 						{:else}
 							<img src={item.src} alt={item.alt} />
@@ -87,7 +98,11 @@
 		{/if}
 
 		{#if ctaText && ctaLink}
-			<button class="cta-link" on:click={openCtaLink}>
+			<button
+				type="button"
+				class="cta-link"
+				on:click={openCtaLink}
+			>
 				{ctaText}
 			</button>
 		{/if}

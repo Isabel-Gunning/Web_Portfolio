@@ -77,9 +77,9 @@
 
 				<h2>Phone</h2>
 
-				<p>
+				<a href="tel:+353834608469">
 					+353 083 460 8469
-				</p>
+				</a>
 
 			</div>
 
@@ -175,8 +175,7 @@
 		color: var(--color-text-primary);
 	}
 
-	.contact-card a,
-	.contact-card p {
+	.contact-card a {
 		font-family: var(--font-body);
 		font-size: var(--font-base);
 		color: var(--contact-link-text);

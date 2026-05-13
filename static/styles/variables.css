@@ -57,6 +57,8 @@
     --color-primary: #f9e983;
     --color-text-primary: #55311b;
     --color-text-muted: #a89b86;
+
+    --color-focus: #55311b;
     
     /* Typography */
     --font-heading: "Fredoka", sans-serif;
@@ -167,12 +169,12 @@ body.high-contrast {
     --qa-scrollbar-thumb: #9d72e8;
 
     /* Questions */
-    --qa-question-background: #dbc5ff;
-    --qa-question-text: #4b2578;
+    --qa-question-background: #f1e7ff;
+    --qa-question-text: #2f1640;
 
     /* Answers */
-    --qa-answer-background: #7c5bc7;
-    --qa-answer-text: #fdf7ff;
+    --qa-answer-background: #5f3fa8;
+    --qa-answer-text: #ffffff;
 
     /* Q & A Letter Circles */
     --qa-question-letter-background: #7b57c7;

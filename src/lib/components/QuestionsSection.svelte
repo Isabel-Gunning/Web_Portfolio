@@ -177,19 +177,19 @@
 		width: fit-content;
 		max-width: 68%;
 		padding: 0.75rem 1.4rem;
-		color: var(--color-text-primary);
 		box-shadow: 6px 6px 0 var(--qa-bubble-shadow);
 	}
 
     .question-bubble {
 		background-color: var(--qa-question-background);
+		color: var(--qa-question-text);
 		border-radius: 22px;
 	}
 
 	.answer-bubble {
 		background-color: var(--qa-answer-background);
+		color: var(--qa-answer-text);
 		border-radius: 22px;
-
 		margin-left: var(--space-lg);
 	}
 

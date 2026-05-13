@@ -10,7 +10,12 @@
     }
 </script>
 
-<button class="scroll-top" on:click={scrollToTop}>
+<button
+    type="button"
+    class="scroll-top"
+    aria-label="Scroll back to top"
+    on:click={scrollToTop}
+>
     <img src={`${base}/images/icons/arrow-up.svg`} alt="" />
 </button>
 

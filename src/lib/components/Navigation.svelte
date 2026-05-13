@@ -36,27 +36,52 @@
 </script>
 
 <nav class="section-nav" aria-label="Section navigation">
-	<button type="button" class:active={active === "about"} on:click={() => goToSection("about")}>
+	<button
+		type="button"
+		class:active={active === "about"}
+		aria-current={active === "about" ? "page" : undefined}
+		on:click={() => goToSection("about")}
+	>
 		<img src={`${base}/images/icons/profile.svg`} alt="" />
 		<span>About</span>
 	</button>
 
-	<button type="button" class:active={active === "tech"} on:click={() => goToSection("tech")}>
+	<button
+		type="button"
+		class:active={active === "tech"}
+		aria-current={active === "tech" ? "page" : undefined}
+		on:click={() => goToSection("tech")}
+	>
 		<img src={`${base}/images/icons/tech.svg`} alt="" />
 		<span>Tech</span>
 	</button>
 
-	<button type="button" class:active={active === "projects"} on:click={() => goToSection("projects")}>
+	<button
+		type="button"
+		class:active={active === "projects"}
+		aria-current={active === "projects" ? "page" : undefined}
+		on:click={() => goToSection("projects")}
+	>
 		<img src={`${base}/images/icons/projects.svg`} alt="" />
 		<span>Projects</span>
 	</button>
 
-	<button type="button" class:active={active === "qa"} on:click={() => goToSection("qa")}>
+	<button
+		type="button"
+		class:active={active === "qa"}
+		aria-current={active === "qa" ? "page" : undefined}
+		on:click={() => goToSection("qa")}
+	>
 		<img src={`${base}/images/icons/questions.svg`} alt="" />
 		<span>Q&A</span>
 	</button>
 
-	<button type="button" class:active={active === "contact"} on:click={() => goToSection("contact")}>
+	<button
+		type="button"
+		class:active={active === "contact"}
+		aria-current={active === "contact" ? "page" : undefined}
+		on:click={() => goToSection("contact")}
+	>
 		<img src={`${base}/images/icons/contact.svg`} alt="" />
 		<span>Contact</span>
 	</button>

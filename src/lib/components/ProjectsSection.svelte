@@ -14,7 +14,11 @@
 
 		<div class="project-grid">
 
-			<a href={resolve("/projects/art")} class="project-polaroid">
+			<a
+				href={resolve("/projects/art")}
+				class="project-polaroid"
+				aria-label="View art projects"
+			>
 				<div class="polaroid-tape"></div>
 
 				<div class="polaroid-image">
@@ -29,7 +33,11 @@
 				</div>
 			</a>
 
-			<a href={resolve("/projects/animation")} class="project-polaroid">
+			<a
+				href={resolve("/projects/animation")}
+				class="project-polaroid"
+				aria-label="View animation projects"
+			>
 				<div class="polaroid-tape"></div>
 
 				<div class="polaroid-image">
@@ -44,7 +52,11 @@
 				</div>
 			</a>
 
-			<a href={resolve("/projects/coding")} class="project-polaroid">
+			<a
+				href={resolve("/projects/coding")}
+				class="project-polaroid"
+				aria-label="View coding projects"
+			>
 				<div class="polaroid-tape"></div>
 
 				<div class="polaroid-image">
@@ -59,7 +71,11 @@
 				</div>
 			</a>
 
-			<a href={resolve("/projects/3d")} class="project-polaroid">
+			<a
+				href={resolve("/projects/3d")}
+				class="project-polaroid"
+				aria-label="View 3D modelling projects"
+			>
 				<div class="polaroid-tape"></div>
 
 				<div class="polaroid-image">
@@ -74,7 +90,11 @@
 				</div>
 			</a>
 
-			<a href={resolve("/projects/crocheting")} class="project-polaroid">
+			<a
+				href={resolve("/projects/crocheting")}
+				class="project-polaroid"
+				aria-label="View crocheting projects"
+			>
 				<div class="polaroid-tape"></div>
 
 				<div class="polaroid-image">
