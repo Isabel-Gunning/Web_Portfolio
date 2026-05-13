@@ -7,11 +7,15 @@
 
 </script>
 
+<a href="#main-content" class="skip-link">
+	Skip to main content
+</a>
+
 <AccessibilityToggle />
 <Header />
 <Navigation />
 
-<main>
+<main id="main-content">
     <slot />
 </main>
 
@@ -19,6 +23,22 @@
 <ScrollToTop />
 
 <style>
+    .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 20px;
+        background: var(--color-primary);
+        color: var(--color-text-primary);
+        padding: 0.8rem 1rem;
+        border-radius: var(--radius-md);
+        z-index: 1000;
+        transition: top 0.2s ease;
+    }
+
+    .skip-link:focus {
+        top: 20px;
+    }
+
     main {
         padding-top: var(--main-padding-top);
     }
@@ -28,5 +48,4 @@
             padding-top: var(--main-padding-top-mobile);
         }
    }
-
 </style>

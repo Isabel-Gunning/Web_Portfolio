@@ -4,36 +4,36 @@
 
 	const artItems = [
 		/* Digital Artwork */
-		{ category: "Digital", src: `${base}/images/art/digital-1.png`, alt: "Digital artwork 1" },
-		{ category: "Digital", src: `${base}/images/art/digital-2.png`, alt: "Digital artwork 2" },
-		{ category: "Digital", src: `${base}/images/art/digital-3.png`, alt: "Digital artwork 3" },
-		{ category: "Digital", src: `${base}/images/art/digital-4.png`, alt: "Digital artwork 4" },
-		{ category: "Digital", src: `${base}/images/art/digital-5.png`, alt: "Digital artwork 5" },
-		{ category: "Digital", src: `${base}/images/art/digital-6.png`, alt: "Digital artwork 6" },
-		{ category: "Digital", src: `${base}/images/art/digital-7.png`, alt: "Digital artwork 7" },
-		{ category: "Digital", src: `${base}/images/art/digital-8.png`, alt: "Digital artwork 8" },
-		{ category: "Digital", src: `${base}/images/art/digital-9.png`, alt: "Digital artwork 9" },
-		{ category: "Digital", src: `${base}/images/art/digital-10.png`, alt: "Digital artwork 10" },
-		{ category: "Digital", src: `${base}/images/art/digital-11.png`, alt: "Digital artwork 11" },
-		{ category: "Digital", src: `${base}/images/art/digital-12.png`, alt: "Digital artwork 12" },
-		{ category: "Digital", src: `${base}/images/art/digital-13.png`, alt: "Digital artwork 13" },
-		{ category: "Digital", src: `${base}/images/art/digital-14.png`, alt: "Digital artwork 14" },
-		{ category: "Digital", src: `${base}/images/art/digital-15.png`, alt: "Digital artwork 15" },
-        { category: "Digital", src: `${base}/images/art/digital-16.png`, alt: "Digital artwork 16" },
+		{ category: "Digital", src: `${base}/images/art/digital-1.png`, alt: "Girl crouched poster" },
+		{ category: "Digital", src: `${base}/images/art/digital-2.png`, alt: "Animal crossing character" },
+		{ category: "Digital", src: `${base}/images/art/digital-3.png`, alt: "Girl with a gun" },
+		{ category: "Digital", src: `${base}/images/art/digital-4.png`, alt: "Man from the circus" },
+		{ category: "Digital", src: `${base}/images/art/digital-5.png`, alt: "Girl with butterfly on her nose" },
+		{ category: "Digital", src: `${base}/images/art/digital-6.png`, alt: "Girl crouched original picture" },
+		{ category: "Digital", src: `${base}/images/art/digital-7.png`, alt: "Slime ranchers slimes" },
+		{ category: "Digital", src: `${base}/images/art/digital-8.png`, alt: "Slime rancher slimes 2" },
+		{ category: "Digital", src: `${base}/images/art/digital-9.png`, alt: "Totoro" },
+		{ category: "Digital", src: `${base}/images/art/digital-10.png`, alt: "Darth Vader" },
+		{ category: "Digital", src: `${base}/images/art/digital-11.png`, alt: "Girl wielding a scythe" },
+		{ category: "Digital", src: `${base}/images/art/digital-12.png`, alt: "Noe and Vanitas" },
+		{ category: "Digital", src: `${base}/images/art/digital-13.png`, alt: "Character turn around of a girl" },
+		{ category: "Digital", src: `${base}/images/art/digital-14.png`, alt: "Capybara with a bee hat" },
+		{ category: "Digital", src: `${base}/images/art/digital-15.png`, alt: "Skeleton spider" },
+        { category: "Digital", src: `${base}/images/art/digital-16.png`, alt: "Girl in water" },
 
 
 		/* Traditional Artwork */
-		{ category: "Traditional", src: `${base}/images/art/traditional-1.jpg`, alt: "Traditional artwork 1" },
-		{ category: "Traditional", src: `${base}/images/art/traditional-2.jpg`, alt: "Traditional artwork 2" },
-		{ category: "Traditional", src: `${base}/images/art/traditional-3.jpg`, alt: "Traditional artwork 3" },
-		{ category: "Traditional", src: `${base}/images/art/traditional-4.jpg`, alt: "Traditional artwork 4" },
-		{ category: "Traditional", src: `${base}/images/art/traditional-5.jpg`, alt: "Traditional artwork 5" },
-		{ category: "Traditional", src: `${base}/images/art/traditional-6.jpg`, alt: "Traditional artwork 6" },
-		{ category: "Traditional", src: `${base}/images/art/traditional-7.jpg`, alt: "Traditional artwork 7" },
-		{ category: "Traditional", src: `${base}/images/art/traditional-8.jpg`, alt: "Traditional artwork 8" },
-		{ category: "Traditional", src: `${base}/images/art/traditional-9.jpg`, alt: "Traditional artwork 9" },
-		{ category: "Traditional", src: `${base}/images/art/traditional-10.jpg`, alt: "Traditional artwork 10" },
-		{ category: "Traditional", src: `${base}/images/art/traditional-11.jpg`, alt: "Traditional artwork 11" }
+		{ category: "Traditional", src: `${base}/images/art/traditional-1.jpg`, alt: "Rengoku" },
+		{ category: "Traditional", src: `${base}/images/art/traditional-2.jpg`, alt: "Maomao" },
+		{ category: "Traditional", src: `${base}/images/art/traditional-3.jpg`, alt: "Titan-chan" },
+		{ category: "Traditional", src: `${base}/images/art/traditional-4.jpg`, alt: "Girl under the autumn leaves" },
+		{ category: "Traditional", src: `${base}/images/art/traditional-5.jpg`, alt: "Kiernan" },
+		{ category: "Traditional", src: `${base}/images/art/traditional-6.jpg`, alt: "Kiernan 2" },
+		{ category: "Traditional", src: `${base}/images/art/traditional-7.jpg`, alt: "Girl portrait" },
+		{ category: "Traditional", src: `${base}/images/art/traditional-8.jpg`, alt: "Zoey" },
+		{ category: "Traditional", src: `${base}/images/art/traditional-9.jpg`, alt: "Self portrait" },
+		{ category: "Traditional", src: `${base}/images/art/traditional-10.jpg`, alt: "Solo leveling God statue" },
+		{ category: "Traditional", src: `${base}/images/art/traditional-11.jpg`, alt: "Young girl walking" }
 	];
 </script>
 
