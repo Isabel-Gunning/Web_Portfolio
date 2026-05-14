@@ -1,28 +1,28 @@
 <script>
     const questions = [
         {
-            question: 'Question here?',
-            answer: 'answer to question!'
+            question: 'How much time does a piece of art take you?',
+            answer: 'I wound consider myself quite a slow and methodical worker when it comes to my creative process, so depending on the depth and complexity of the piece, a piece of art can take me anywhere from a day to several weeks to complete. However, I enjoy taking my time with details and allowing ideas to naturally develop throughout the process!'
         },
         {
-            question: 'Question here?',
-            answer: 'answer to question!'
+            question: 'What is your favourite part about creating?',
+            answer: 'What I love most about creating art is the feeling and emotion behind each piece. I see art as a form of self-expression that allows me to communicate emotions and ideas that I may not always have the words to describe. Being able to turn feelings into something visual and tangible is one of the most rewarding parts of the creative process for me.'
         },
         {
-            question: 'Question here?',
-            answer: 'answer to question!'
+            question: 'What’s your preferred medium?',
+            answer: 'When it comes to traditional art, my favourite medium currently is colouring pencils. I enjoy the level of control they give me, especially when working with shadows, highlights, and blending colours together. I find them both relaxing and versatile to work with.'
         },
         {
-            question: 'Question here?',
-            answer: 'answer to question!'
+            question: 'What’s your preferred software when it comes to digital art?',
+            answer: 'Depending on what I’m trying to create, I tend to switch between different software. I particularly enjoy using Ibis Paint for character designs and polished illustrations, while I prefer Krita for animation because I find the software beginner-friendly and easy to navigate as a beginner animator.'
         },
         {
-            question: 'Question here?',
-            answer: 'answer to question!'
+            question: 'What kind of art do you enjoy creating/looking at?',
+            answer: 'I enjoy creating art that tells a story, captures emotion, and contains small details that hold deeper meaning. When I look at artwork, I often experience a sense of excitement, comfort, or wonder, and I try to create pieces that can provide that same feeling for other people. I’m especially drawn to imaginative worlds, expressive characters, and artwork that feels emotionally honest.'
         },
         {
-            question: 'Question here?',
-            answer: 'answer to question!'
+            question: 'Who’s your favourite artist?',
+            answer: 'One of my all-time favourite artists is Gretel Lusky. I admire her work because every piece feels full of emotion and tells a story. Her artwork is created with such care, atmosphere, and attention to detail that it becomes difficult not to feel emotionally connected to the worlds and characters she creates. Her work greatly inspires my own creative process, particularly in the way she uses colour, emotion, and visual storytelling to create pieces that feel both imaginative and deeply personal.'
         }
     ];
 

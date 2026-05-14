@@ -73,6 +73,6 @@ The website was designed to showcase my creative and technical work across multi
 
     The website was mostly made using reusable Svelte components and reusable CSS variables.
 
-    The website was tested using keyboard navigation to ensure all major interactions could be accessed without a mouse and also a screen reader to ensure all the aria labels were working correctly. 
+    The website was tested using keyboard navigation to ensure all major interactions could be accessed without a mouse, a screen reader to ensure all the aria labels were working correctly and lighthouse for the websites overall usability, accessibility and SEO.
 
     I designed the website desktop first and added in the mobile view for each section as I progressed through the website development.
